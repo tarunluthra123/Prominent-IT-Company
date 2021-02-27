@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8vh;
+	background-color: white;
+	padding: 0 3vw;
+	z-index: 500;
+	font-size: 20px;
+}
+
+header .logo {
+	color: #7c3aed;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: default;
+}
+
+nav {
+	display: flex;
+	width: 60%;
+	background-color: inherit;
+	justify-content: space-evenly;
+}
+
+nav a {
+	font-size: 22px;
+	color: rgb(158, 158, 158);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #7c3aed;
+}
+
+main {
+	margin-top: 8vh;
+}
+
+main h1 {
+	color: black;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+.content h1 span {
+	color: #7c3aed;
+}
+
+.first-section {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+}
+
+.content {
+	background-color: white;
+	padding: 10px 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 800px;
+}
+
+.content h1 {
+	font-size: 5.1vw;
+}
+
+.content p {
+	font-size: 1.5vw;
+	color: rgb(117, 117, 117);
+}
+
+.first-section .image-container img {
+	clip-path: polygon(54% 0, 100% 0, 100% 100%, 33% 100%);
+	height: 90vh;
+}
+
+.second-section {
+	margin: 20vh 5vw;
+}
+
+.second-section .features-heading {
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	padding: 0 230px;
+	color: rgb(117, 117, 117);
+}
+
+.second-section .features-heading h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+}
+
+.features {
+	margin: 50px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	height: 50vh;
+}
+
+.feature {
+	width: 40vw;
+	display: flex;
+}
+
+i {
+	background-color: #521ab3;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	height: 35px;
+	width: 50px;
+	margin: 10px;
+}
+
+.third-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 10vw;
+}
+
+.team-content h1 {
+	font-size: 3vw;
+	margin-bottom: 10px;
+}
+
+.avatar img {
+	height: 100px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+.third-section .team-content {
+	width: 50%;
+	font-size: 20px;
+	color: rgb(117, 117, 117);
+}
+
+.avatars-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.avatar {
+	width: 40%;
+	margin: 10px 20px;
+	display: flex;
+}
+
+.avatar-name {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.avatar-post {
+	font-size: 18px;
+	color: #7c3aed;
+	font-weight: bold;
+}
+
+.avatar > span {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 30px;
+}
+
+.fourth-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20vh;
+}
+
+.fourth-section img {
+	width: 50%;
+}
+
+.fourth-section .support-content {
+	background-color: #441d88;
+	width: 50%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px;
+}
+
+.fourth-section .support-content span {
+	color: rgb(189, 189, 189);
+}
+
+.fourth-section .support-content h2 {
+	font-size: 38px;
+}
+
+.fourth-section .support-content p {
+	font-size: 20px;
+	color: rgb(231, 231, 231);
+}
+
+.fourth-section .support-content button {
+	height: 50px;
+	width: 300px;
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 20px;
+}

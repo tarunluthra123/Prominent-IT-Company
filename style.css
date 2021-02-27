@@ -386,3 +386,44 @@ footer {
 .stats-numbers span {
 	font-size: 25px;
 }
+
+.companies {
+	background-color: #ddddff;
+	min-height: 60vh;
+	color: rgb(70, 42, 172);
+	padding: 8vh 2vw;
+}
+
+.companies h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 10vh;
+}
+
+.company-images {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.company-images span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	min-height: 30%;
+	min-width: 30%;
+	margin: 3vh 0;
+	cursor: default;
+}
+
+.company-images i {
+	background-color: inherit;
+	color: inherit;
+	font-size: 40px;
+	align-self: flex-end;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	padding-right: 60px;
+}

@@ -86,8 +86,40 @@ main h1 {
 }
 
 .first-section .image-container img {
-	clip-path: polygon(54% 0, 100% 0, 100% 100%, 33% 100%);
+	clip-path: polygon(34% 0, 100% 0, 100% 100%, 20% 100%);
 	height: 90vh;
+}
+
+.intro-buttons button {
+	margin-top: 20px;
+	margin-right: 10px;
+	padding: 20px 30px;
+	font-size: 23px;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.intro-buttons button:first-child {
+	background-color: #5b3aed;
+	color: white;
+}
+
+.intro-buttons button:first-child:hover {
+	background-color: #6e4eff;
+}
+
+.intro-buttons button:last-child {
+	background-color: aliceblue;
+	color: #5b3aed;
+}
+
+.intro-buttons button:last-child:hover {
+	background-color: rgb(222, 240, 255);
+}
+
+button:focus {
+	outline: none;
 }
 
 .second-section {
@@ -228,4 +260,129 @@ i {
 	cursor: pointer;
 	background-color: white;
 	border-radius: 20px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(224, 224, 224);
+}
+
+.info {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: rgb(100, 100, 100);
+	padding: 30px 30px;
+	font-size: 23px;
+}
+
+.info i {
+	background-color: inherit;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.info i:hover {
+	color: rgb(71, 71, 71);
+}
+
+.links {
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 4vh;
+}
+
+.links span {
+	color: rgb(141, 141, 141);
+	font-size: 18px;
+}
+
+.links ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 15vh;
+}
+
+.links ul li {
+	cursor: pointer;
+}
+
+.newsletter-section {
+	display: flex;
+}
+
+.newsletter-section img {
+	width: 50%;
+	clip-path: polygon(27% 0, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.newsletter-section h2 {
+	font-size: 40px;
+}
+
+.newsletter-section .input-group {
+	margin-top: 30px;
+}
+
+.input-group input {
+	font-size: 25px;
+	margin-right: 10px;
+	padding: 8px;
+}
+
+.input-group button {
+	padding: 13px 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.stats-section {
+	display: flex;
+	/* margin: 20vh 0; */
+	min-height: 100vh;
+	align-items: center;
+	background-color: rgb(236, 236, 236);
+}
+
+.stats-section img {
+	width: 50%;
+}
+
+.stats-info {
+	width: 50%;
+	margin: 0 5%;
+}
+
+.stats-info h1 {
+	font-size: 40px;
+}
+
+.stats-info p {
+	color: rgb(158, 158, 158);
+	font-size: 20px;
+}
+
+.stats-numbers {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+
+.stats-numbers span h3 {
+	color: #7c3aed;
+	font-size: 35px;
+}
+
+.stats-numbers span {
+	font-size: 25px;
 }

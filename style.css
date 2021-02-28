@@ -107,6 +107,10 @@ main h1 {
 	height: 90vh;
 }
 
+button {
+	border: 0;
+}
+
 .intro-buttons button {
 	margin-top: 20px;
 	margin-right: 10px;

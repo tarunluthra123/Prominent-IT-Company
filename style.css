@@ -60,7 +60,7 @@ main h1 {
 		sans-serif;
 }
 
-.content h1 span {
+.content h1 span:last-child {
 	color: #7c3aed;
 }
 
@@ -91,6 +91,14 @@ main h1 {
 
 #intro-hero h1 {
 	font-size: 4.2vw;
+	cursor: default;
+}
+#intro-hero h1 span {
+	transition: 0.2s ease-in;
+}
+
+#intro-hero h1 span:hover {
+	color: #7c3aed;
 }
 
 .content h1 {
@@ -387,6 +395,11 @@ main {
 
 .stats-section img {
 	width: 50%;
+	transition: 0.2s ease-in-out;
+}
+
+.stats-section img:hover {
+	border-radius: 40px;
 }
 
 .stats-info {
@@ -436,6 +449,11 @@ main {
 	text-align: center;
 	font-size: 40px;
 	margin-bottom: 10vh;
+	cursor: default;
+}
+
+.companies h2:hover {
+	color: rgb(80, 32, 252);
 }
 
 .company-images {
@@ -464,6 +482,10 @@ main {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+.company-images span:hover i {
+	color: rgb(80, 32, 252);
 }
 
 @media screen and (max-width: 768px) {

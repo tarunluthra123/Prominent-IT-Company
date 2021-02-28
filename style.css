@@ -42,6 +42,10 @@ nav a {
 	text-decoration: none;
 }
 
+.fa-bars {
+	display: none;
+}
+
 nav a:hover {
 	color: #7c3aed;
 }
@@ -73,7 +77,7 @@ main h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex-basis: 800px;
+	flex-basis: 400px;
 }
 
 .content h1 {
@@ -127,10 +131,10 @@ button:focus {
 }
 
 .second-section .features-heading {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	font-size: 20px;
 	text-align: center;
-	padding: 0 230px;
+	padding: 0 10vw;
 	color: rgb(117, 117, 117);
 }
 
@@ -141,12 +145,12 @@ button:focus {
 }
 
 .features {
-	margin: 50px 40px;
+	margin: 50px 10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-around;
-	height: 50vh;
+	min-height: 40vh;
 }
 
 .feature {
@@ -168,7 +172,7 @@ i {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 10vw;
+	margin: 5vh 10vw;
 }
 
 .team-content h1 {
@@ -183,7 +187,7 @@ i {
 }
 
 .third-section .team-content {
-	width: 50%;
+	width: 100%;
 	font-size: 20px;
 	color: rgb(117, 117, 117);
 }
@@ -196,7 +200,7 @@ i {
 
 .avatar {
 	width: 40%;
-	margin: 10px 20px;
+	margin: 10px 10px;
 	display: flex;
 }
 
@@ -426,4 +430,138 @@ footer {
 	padding: 0;
 	margin: 0;
 	padding-right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+	header .logo {
+		font-size: 25px;
+	}
+
+	nav a {
+		font-size: 15px;
+	}
+	.first-section {
+		flex-direction: column;
+	}
+
+	.first-section .image-container img {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		/* height: 60vh; */
+		height: auto;
+		width: 100vw;
+	}
+
+	.content p {
+		font-size: 3vw;
+	}
+
+	.intro-buttons button {
+		padding: 10px 20px;
+		font-size: 15px;
+	}
+
+	.features {
+		margin: 35px 8px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.feature {
+		width: 80vw;
+		margin: 10px 0;
+	}
+
+	.third-section {
+		flex-direction: column;
+		height: 80vh;
+	}
+
+	.team-content h1 {
+		font-size: 35px;
+	}
+	.avatar img {
+		height: 80px;
+		width: 60px;
+	}
+	.avatar-name {
+		font-size: 20px;
+	}
+	.avatar-post {
+		font-size: 15px;
+	}
+
+	.fourth-section {
+		margin-top: 40vh;
+		flex-direction: column-reverse;
+		margin-bottom: 10vh;
+	}
+	.fourth-section img,
+	.fourth-section .support-content {
+		width: 100%;
+	}
+
+	.fourth-section .support-content button {
+		height: 40px;
+		width: 200px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.fa-bars {
+		display: block;
+		padding: 0;
+		margin: 0;
+		color: black;
+		background-color: inherit;
+		padding: 8px;
+		cursor: pointer;
+		position: relative;
+	}
+	header {
+		justify-content: space-around;
+	}
+	.fa-bars:hover nav {
+		display: flex;
+		flex-direction: column;
+		min-height: 30vh;
+		position: absolute;
+		left: -45px;
+		background-color: white;
+		width: 130px;
+		padding-left: 10px;
+		border-radius: 0 0 10px 10px;
+	}
+	nav {
+		display: none;
+	}
+
+	.content {
+		background-color: white;
+		padding: 0px 40px;
+		flex-basis: 300px;
+	}
+
+	.intro-buttons button {
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+
+	.content p {
+		font-size: 3.5vw;
+	}
+
+	.second-section .features-heading h1 {
+		font-size: 30px;
+	}
+	.avatars-group {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+
+	.fourth-section {
+		margin-top: 50vh;
+		margin-bottom: 10vh;
+	}
 }
